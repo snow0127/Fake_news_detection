@@ -1,80 +1,105 @@
-# Fake News Detection System
-## Project Overview
-- This project focuses on detecting whether a news article is Fake or Real using Machine Learning (Text Classification) techniques.
-- The model is built using:
-- TF-IDF Vectorization
-- Logistic Regression
-- Evaluation using Accuracy and F1 Score
-- The project also performs detailed data analysis to understand patterns in fake news.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
 
----
+<div class="container">
 
- ## Objectives
-- Classify news articles as Fake or Real
-- Analyze patterns in fake news headlines
-- Study growth trends of fake news
-- Identify keywords strongly associated with fake and real news
-- Compare article characteristics (length, category, source, etc.)
+<h1>📰 Fake News Detection System</h1>
 
----
+<h2>Project Overview</h2>
+<p>
+This project focuses on detecting whether a news article is <strong>Fake or Real</strong> 
+using Machine Learning (Text Classification) techniques.
+</p>
+<ul>
+    <li>TF-IDF Vectorization</li>
+    <li>Logistic Regression</li>
+    <li>Evaluation using Accuracy and F1 Score</li>
+    <li>Detailed data analysis to understand fake news patterns</li>
+</ul>
 
-## Dataset
-- Dataset used: fake_real_news.csv
-- Main columns:
-- title – News headline
-- text – News content
-- date – Publication date
-- source – News source
-- subject – News category
-- label – 0 (Real), 1 (Fake)
+<h2>Objectives</h2>
+<ul>
+    <li>Classify news articles as Fake or Real</li>
+    <li>Analyze patterns in fake news headlines</li>
+    <li>Study growth trends of fake news</li>
+    <li>Identify keywords associated with fake and real news</li>
+    <li>Compare article characteristics (length, category, source)</li>
+</ul>
 
----
+<h2>Dataset</h2>
+<p><strong>Dataset Used:</strong> fake_real_news.csv</p>
+<ul>
+    <li><strong>title</strong> – News headline</li>
+    <li><strong>text</strong> – News content</li>
+    <li><strong>date</strong> – Publication date</li>
+    <li><strong>source</strong> – News source</li>
+    <li><strong>subject</strong> – News category</li>
+    <li><strong>label</strong> – 0 (Real), 1 (Fake)</li>
+</ul>
 
-##Technologies Used
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-learn
+<h2>Technologies Used</h2>
+<ul>
+    <li>Python</li>
+    <li>Pandas</li>
+    <li>NumPy</li>
+    <li>Matplotlib</li>
+    <li>Seaborn</li>
+    <li>Scikit-learn</li>
+</ul>
 
----
+<h2>Model Implementation</h2>
 
-## Model Implementation
-1.	Data Preprocessing
-- Combined title + text into a single content column
-- Converted date to datetime format
-- Applied TF-IDF vectorization
+<h3>1. Data Preprocessing</h3>
+<ul>
+    <li>Combined title and text into a single content column</li>
+    <li>Converted date to datetime format</li>
+    <li>Applied TF-IDF vectorization</li>
+</ul>
 
-2.	Train-Test Split
-- 80% Training Data
-- 20% Testing Data
+<h3>2. Train-Test Split</h3>
+<ul>
+    <li>80% Training Data</li>
+    <li>20% Testing Data</li>
+</ul>
 
-3.	Model Used
-- Logistic Regression
+<h3>3. Model Used</h3>
+<ul>
+    <li>Logistic Regression</li>
+</ul>
 
-4.	Evaluation Metrics
-- Accuracy Score
-- F1 Score
+<h3>4. Evaluation Metrics</h3>
+<ul>
+    <li>Accuracy Score</li>
+    <li>F1 Score</li>
+</ul>
 
----
+<h2>Analysis Questions Answered</h2>
+<ol>
+    <li>What are the most common words used in fake news headlines?</li>
+    <li>Do fake headlines use more sensational words?</li>
+    <li>What is the average number of news per day?</li>
+    <li>What is the monthly and yearly growth rate of fake news?</li>
+    <li>Which keywords are strongly associated with real news?</li>
+    <li>Which keywords are strongly associated with fake news?</li>
+    <li>Which source is predicted most fake?</li>
+    <li>Are international news articles more likely to be fake?</li>
+    <li>Which topic/category has the highest percentage of fake news?</li>
+    <li>Does the length of a news article influence prediction?</li>
+</ol>
 
-## Analysis Questions Answered
-1.	What are the most common words used in fake news headlines?
-2.	Do fake headlines use more sensational words?
-3.	What is the average number of news per day?
-4.	What is the monthly and yearly growth rate of fake news?
-5.	Which keywords are strongly associated with real news?
-6.	Which keywords are strongly associated with fake news?
-7.	Which source is predicted most fake?
-8.	Are international news articles more likely to be fake?
-9.	Which topic/category has the highest percentage of fake news?
-10.	Does the length of a news article influence prediction?
+<h2>Key Insights</h2>
+<ul>
+    <li>Fake news often contains sensational words like <em>breaking</em>, <em>shocking</em>, and <em>exclusive</em>.</li>
+    <li>Certain categories show higher fake news ratios.</li>
+    <li>Specific keywords strongly influence classification decisions.</li>
+    <li>Article length can impact prediction outcomes.</li>
+</ul>
 
----
+</div>
 
-## Key Insights
-- Fake news often contains sensational words like breaking, shocking, exclusive.
-- Certain categories have higher fake news ratios.
-- Some keywords strongly influence classification decisions.
-- Article length can impact prediction results.
+</body>
+</html>
